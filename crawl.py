@@ -29,8 +29,8 @@ def craw():
 	'Referer': 'https://disc.gsfc.nasa.gov/daac-bin/FTPSubset2.pl'
 	}
 	data = {
-	'username': 'A05599',
-	'password': 'mywind@A05599'
+	'username': '',
+	'password': ''
 	}
 	session = requests.session()
 	req = session.post(url=urls[0], data=data, headers=headers)
@@ -88,9 +88,9 @@ if __name__ == '__main__':
  
 # # create session with the user credentials that will be used to authenticate access to the data
  
-# username = "A05599"
+# username = ""
  
-# password= "mywind@A05599"
+# password= ""
  
 # session = SessionWithHeaderRedirection(username, password)
  
